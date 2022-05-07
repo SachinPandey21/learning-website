@@ -406,3 +406,23 @@ h3 {
     margin-top: 20px;
     font-weight: 600;
 }
+
+
+/* darkmode and lightmode */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+}
