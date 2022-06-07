@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width ,initial-scale= 1.0">
+    <title>self website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: aqua;
+            border: 1px solid rgb(16, 29, 32);
+            padding: 12px 34px;
+            font-size: 21px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .hero-btn:hover {
+            border: 1px solid blueviolet;
+            background: #1b25ac;
+            transition: 1s;
+        }
+        
+        .icons {
+            margin: 15px;
+        }
+        
+        .fa-google,
+        .fa-facebook,
+        .fa-instagram,
+        .fa-twitter {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/About.html">ABOUT</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                    <!-- <li><a href="">SIGN UP</a></li> -->
+                    <li>
+                        <div>
+                            <button class="button" onclick="darkMode()">DARK</button>
+                        </div>
+                        <script>
+                            function darkMode() {
+                                var element = document.body;
+                                element.classList.toggle("dark-mode");
+                            }
+                        </script>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <!-- about us content  -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h2>You will find best here !!!</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusantium temporibus quisquam dolore voluptas accusamus officiis magni iusto adipisci error necessitatibus ex recusandae animi voluptatum ea quasi, qui quam ut!</h5>
+                <a href="" class="hero-btn another-btn">Explore More</a>
+            </div>
+            <div class="about-col">
+                <img src="/group meeting.jpg" alt="other">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- /////////////////// footer ////////////////// -->
+
+    <section class="footer">
+        <h4>Description</h4>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, incidunt iusto autem optio debitis, saepe soluta atque, illo illum repudiandae aliquid <br>officia deserunt voluptatum dolorem nisi quisquam alias maxime perferendis voluptatem.Dolore
+            similique, voluptatum, eaque dicta ipsam eos nobis ipsum ea, obcaecati alias quam ducimus.<br> Exercitationem autem cupiditate natus ullam!</h6>
+
+        <!-- so this way we cant insert ICONS  -->
+        <div class="icons">
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google"></i>
+
+        </div>
+        <h6><b>Made by Sachin Pandey </b></h6>
+
+    </section>
+
+    <!-- JavaScript for toggling main menu for small devices -->
+    <script>
+        var navLinks = document.getEelemntById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
